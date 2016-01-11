@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<project name="jenkins2-test" default="info">
+ <target name="info" depends="test">
+<echo>Hello world</echo>
+</target>
+<target name="test">
+ <exec executable="uname">
+ <arg value="-a"/>
+</exec>
+</target>
+</project>
